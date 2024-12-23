@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JB Nightstand App</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="manifest" href="manifest.json">
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js").then(() => {
+      console.log("Service Worker Registered");
+    });
+  }
+</script>
+
+</head>
+<body>
+    <div class="app-container">
+        <!-- Time and Date Section -->
+        <div class="time-date">
+            <h1 id="time">--:--</h1>
+            <h2 id="date">Loading date...</h2>
+        </div>
+        
+        <!-- Weather Section -->
+        <div class="weather">
+    <p id="weather">Loading weather...</p>
+    <p id="temp-range">High: --°F | Low: --°F</p>
+    <p id="location">Loading location...</p>
+</div>
+<div class="forecast-container">
+    <!-- Forecast placeholders for 5 days -->
+    <div class="forecast-day">
+        <p class="forecast-date">Day</p>
+        <img class="forecast-icon" src="" alt="Weather icon">
+        <p class="forecast-temp">High: --°F | Low: --°F</p>
+    </div>
+    <div class="forecast-day">
+        <p class="forecast-date">Day</p>
+        <img class="forecast-icon" src="" alt="Weather icon">
+        <p class="forecast-temp">High: --°F | Low: --°F</p>
+    </div>
+    <div class="forecast-day">
+        <p class="forecast-date">Day</p>
+        <img class="forecast-icon" src="" alt="Weather icon">
+        <p class="forecast-temp">High: --°F | Low: --°F</p>
+    </div>
+    <div class="forecast-day">
+        <p class="forecast-date">Day</p>
+        <img class="forecast-icon" src="" alt="Weather icon">
+        <p class="forecast-temp">High: --°F | Low: --°F</p>
+    </div>
+    <div class="forecast-day">
+        <p class="forecast-date">Day</p>
+        <img class="forecast-icon" src="" alt="Weather icon">
+        <p class="forecast-temp">High: --°F | Low: --°F</p>
+    </div>
+</div>
+
+
+
+        <!-- Background Section (uses CSS for image) -->
+        <div class="background"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
