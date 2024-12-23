@@ -1,0 +1,174 @@
+padding-top: 10px;
+
+h1, .h1
+{
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 60px;
+   text-decoration: none;
+   color: #FFFFFF;
+   --color: #FFFFFF;
+   background-color: transparent;
+   margin: 0 0 0 0;
+   padding: 0 0 0 0;
+   display: inline-block;
+   line-height: 1;
+}
+h2, .h2
+{
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 42px;
+   text-decoration: none;
+   color: #FFFFFF;
+   --color: #FFFFFF;
+   background-color: transparent;
+   margin: 0 0 0 0;
+   padding: 0 0 0 0;
+   display: inline-block;
+}
+h3, .h3
+{
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 24px;
+   text-decoration: none;
+   color: #FFFFFF;
+   --color: #000000;
+   background-color: transparent;
+   margin: 0 0 0 0;
+   padding: 0 0 0 0;
+   display: inline-block;
+}
+h4, .h4
+{
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 21px;
+   font-style: italic;
+   text-decoration: none;
+   color: #FFFFFF;
+   --color: #000000;
+   background-color: transparent;
+   margin: 0 0 0 0;
+   padding: 0 0 0 0;
+   display: inline-block;
+}
+h5, .h5
+{
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 19px;
+   text-decoration: none;
+   color: #FFFFFF;
+   --color: #000000;
+   background-color: transparent;
+   margin: 0 0 0 0;
+   padding: 0 0 0 0;
+   display: inline-block;
+}
+h6, .h6
+{
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 16px;
+   text-decoration: none;
+   color: #FFFFFF;
+   --color: #000000;
+   background-color: transparent;
+   margin: 0 0 0 0;
+   padding: 0 0 0 0;
+   display: inline-block;
+}
+.CustomStyle
+{
+   font-family: "Courier New";
+   font-weight: bold;
+   font-size: 16px;
+   text-decoration: none;
+   color: #2E74B5;
+   --color: #2E74B5;
+   background-color: transparent;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    background: url('Harbor.jpg') no-repeat center center/cover;
+}
+
+.time-date {
+    margin-top: 1px;
+    margin-bottom: 0px:
+    line-height: 1;
+}
+
+#time {
+    font-size: 10em;
+    margin-top: 10px;
+    margin-bottom: 10px:
+}
+
+#date {
+    font-size: 1.5em;
+}
+
+.weather {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.forecast-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    border-top: 2px solid white;
+    padding-top: 10px;
+}
+
+.forecast-day {
+    text-align: center;
+    flex: 1;
+    border-right: 1px solid white;
+    padding: 0 10px;
+}
+
+.forecast-day:last-child {
+    border-right: none; /* Remove border for the last day */
+}
+
+.forecast-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.forecast-temp {
+    font-size: 1em;
+    margin-top: 5px;
+}
+

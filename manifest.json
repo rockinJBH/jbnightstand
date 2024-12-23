@@ -1,0 +1,20 @@
+{
+  "name": "JB Nightstand",
+  "short_name": "Nightstand",
+  "start_url": "./mainSite.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "NSicon192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "NSicon512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
