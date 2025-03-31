@@ -112,25 +112,75 @@ body, html {
     background: url('Harbor.jpg') no-repeat center center/cover;
 }
 
-.time-date {
-    margin-top: 1px;
-    margin-bottom: 0px:
-    line-height: 1;
+/* Container for Time and Date */
+.time-date-container {
+    position: absolute;
+    top: 70px;
+    left: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 40px;
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly translucent black */
+    border: 5px solid white;
+    border-radius: 20px;
+    text-align: left;
 }
 
+/* Time Style */
 #time {
-    font-size: 10em;
-    margin-top: 10px;
-    margin-bottom: 10px:
+    font-size: 8em;
+    margin: 0;
+    color: white;
 }
 
+/* Date Style */
 #date {
-    font-size: 1.5em;
+    font-size: 2em;
+    margin-top: 5px;
+    color: white;
 }
 
-.weather {
-    margin-bottom: 10px;
-    font-size: 1.5em;
+
+/* Container for Weather */
+.weather-container {
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly translucent black */
+    border: 5px solid white;
+    border-radius: 20px;
+    text-align: left;
+}
+
+#weather-descript {
+    font-size: 2.5em;
+    margin: 0;
+    color: white;
+}
+
+/* Weather Style */
+#weather {
+    font-size: 4em;
+    margin: 0;
+    color: white;
+}
+
+/* Temperature Style */
+#temp {
+    font-size: 5em;
+    margin-top: 5px;
+    color: white;
+}
+
+#temp-range {
+    font-size: 2em;
+    margin-top: 5px;
+    color: white;
 }
 
 .background {
@@ -141,14 +191,36 @@ body, html {
     height: 100%;
     z-index: -1;
 }
+/* Forecast Container - Horizontal Layout */
 .forecast-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly translucent black */
+    border: 5px solid white;
+    border-radius: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+
+    /* Flexbox to align forecast items horizontally */
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px;
-    border-top: 2px solid white;
-    padding-top: 10px;
+    justify-content: space-around; /* Or use space-between if you want more spacing */
+    flex-wrap: nowrap; /* Prevent items from overlapping on smaller screens */
+}
+
+/* Forecast Item Style */
+.forecast-item {
+    display: inline-block; /* Inline block to allow spacing */
+    margin: 10px;
+    color: white;
+    font-size: 1.9em;
+    text-align: center;
+    min-width: 120px;
+    border-right: 1px solid white;
+    padding: 0 10px;
 }
 
 .forecast-day {
@@ -162,9 +234,13 @@ body, html {
     border-right: none; /* Remove border for the last day */
 }
 
+.forecast-item:last-child {
+    border-right: none; /* Remove border for the last day */
+}
+
 .forecast-icon {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
 }
 
 .forecast-temp {
